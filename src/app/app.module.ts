@@ -1,6 +1,8 @@
+import { CatalogService } from './service/catalog.service';
+import { MagentoService } from './service/magento.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -8,9 +10,10 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MagentoService,CatalogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
