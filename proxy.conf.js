@@ -3,7 +3,7 @@ const PROXY_CONFIG = [{
         "/V1",
         "/V2",
     ],
-    target: "http://catalog.dev/rest",
+    target: "http://catalog.local/rest",
     secure: false,
     changeOrigin: true,
     logLevel: "info"
